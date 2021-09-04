@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Area"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp">
+
+    <TableRow>
+        <Button
+            android:onClick="CalculoAreaRectangulo"
+            android:id="@+id/boton2"
+            android:text="@string/Rectangulo"
+            android:layout_weight="1"
+            />
+        <Button
+            android:onClick="CalculoAreaTriangulo"
+            android:layout_weight="1"
+            android:id="@+id/boton3"
+            android:text="@string/Triangulo"
+            />
+
+    </TableRow>
+    <TableRow
+        android:gravity="center">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/text1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/text2"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+    </TableRow>
+
+</TableLayout>
